@@ -1,0 +1,3 @@
+New "RegControl.feeder_rega" transformer=FEEDER_REGA winding=2 tapwinding=2 vreg=126.5 ptratio=60 band=2
+New "RegControl.feeder_regb" transformer=FEEDER_REGB winding=2 tapwinding=2 vreg=126.5 ptratio=60 band=2
+New "RegControl.feeder_regc" transformer=FEEDER_REGC winding=2 tapwinding=2 vreg=126.5 ptratio=60 band=2

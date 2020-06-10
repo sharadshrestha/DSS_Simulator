@@ -1,0 +1,131 @@
+New XYCurve.MyPvsT npts=4  xarray=[0  25  75  100] yarray=[1 1.0 1  1]
+New XYCurve.MyEff npts=4  xarray=[.1  .2  .4  1.0]  yarray=[.86  .9  .93  .97]
+
+New Loadshape.MyIrrad npts=1440 sinterval=1 mult=(File=Curves\irradc.csv)
+New Tshape.MyTemp npts=1200 sinterval=1 temp=(File=Curves\tempc.csv)
+
+
+New Line.line1 Bus1=50 bus2=650  Length=2
+New PVSystem.DER1 phases=3 bus1=650 kV=12.47  kVA=180  Pmpp=180    !original 180KVA
+~ temperature=25 PF=1  effcurve=Myeff  P-TCurve=MyPvsT
+~ Daily=MyIrrad  TDaily=MyTemp
+
+New Line.line2 Bus1=139 bus2=651  Length=2
+New PVSystem.DER2 phases=3 bus1=651 kV=12.47  kVA=60  Pmpp=60     !original 60KVA
+~ temperature=25 PF=1  effcurve=Myeff  P-TCurve=MyPvsT
+~ Daily=MyIrrad  TDaily=MyTemp
+
+New Line.line3 Bus1=537 bus2=652  Length=2
+New PVSystem.DER3 phases=3 bus1=652 kV=12.47  kVA=60  Pmpp=60
+~ temperature=25 PF=1  effcurve=Myeff  P-TCurve=MyPvsT
+~ Daily=MyIrrad  TDaily=MyTemp
+
+New Line.line4 Bus1=545 bus2=653  Length=2
+New PVSystem.DER4 phases=3 bus1=653 kV=12.47  kVA=60  Pmpp=60
+~ temperature=25 PF=1  effcurve=Myeff  P-TCurve=MyPvsT
+~ Daily=MyIrrad  TDaily=MyTemp
+
+New Line.line5 Bus1=43 bus2=654  Length=2
+New PVSystem.DER5 phases=3 bus1=654 kV=12.47  kVA=60  Pmpp=60
+~ temperature=25 PF=1  effcurve=Myeff  P-TCurve=MyPvsT
+~ Daily=MyIrrad  TDaily=MyTemp
+
+New Line.line6 Bus1=181 bus2=655  Length=2
+New PVSystem.DER6 phases=3 bus1=655 kV=12.47  kVA=60  Pmpp=60
+~ temperature=25 PF=1  effcurve=Myeff  P-TCurve=MyPvsT
+~ Daily=MyIrrad  TDaily=MyTemp
+
+New Line.line7 Bus1=194 bus2=656  Length=2
+New PVSystem.DER7 phases=3 bus1=656 kV=12.47  kVA=60  Pmpp=60
+~ temperature=25 PF=1  effcurve=Myeff  P-TCurve=MyPvsT
+~ Daily=MyIrrad  TDaily=MyTemp
+
+New Line.line8 Bus1=201 bus2=657  Length=2
+New PVSystem.DER8 phases=3 bus1=657 kV=12.47  kVA=60  Pmpp=60
+~ temperature=25 PF=1  effcurve=Myeff  P-TCurve=MyPvsT
+~ Daily=MyIrrad  TDaily=MyTemp
+
+New Line.line9 Bus1=223 bus2=658  Length=2
+New PVSystem.DER9 phases=3 bus1=658 kV=12.47  kVA=60  Pmpp=60
+~ temperature=25 PF=1  effcurve=Myeff  P-TCurve=MyPvsT
+~ Daily=MyIrrad  TDaily=MyTemp
+
+New Line.line10 Bus1=217 bus2=659  Length=2
+New PVSystem.DER10 phases=3 bus1=659 kV=12.47  kVA=30  Pmpp=30
+~ temperature=25 PF=1  effcurve=Myeff  P-TCurve=MyPvsT
+~ Daily=MyIrrad  TDaily=MyTemp
+
+New Line.line11 Bus1=534 bus2=660  Length=2
+New PVSystem.DER11 phases=3 bus1=660 kV=12.47  kVA=30  Pmpp=30
+~ temperature=25 PF=1  effcurve=Myeff  P-TCurve=MyPvsT
+~ Daily=MyIrrad  TDaily=MyTemp
+
+New Line.line12 Bus1=368 bus2=661  Length=2
+New PVSystem.DER12 phases=3 bus1=661 kV=12.47  kVA=30  Pmpp=30
+~ temperature=25 PF=1  effcurve=Myeff  P-TCurve=MyPvsT
+~ Daily=MyIrrad  TDaily=MyTemp
+
+New Line.line13 Bus1=507 bus2=662  Length=2
+New PVSystem.DER13 phases=3 bus1=662 kV=12.47  kVA=30  Pmpp=30
+~ temperature=25 PF=1  effcurve=Myeff  P-TCurve=MyPvsT
+~ Daily=MyIrrad  TDaily=MyTemp
+
+New Line.line14 Bus1=214 bus2=663  Length=2
+New PVSystem.DER14 phases=3 bus1=663 kV=12.47  kVA=30  Pmpp=30
+~ temperature=25 PF=1  effcurve=Myeff  P-TCurve=MyPvsT
+~ Daily=MyIrrad  TDaily=MyTemp
+
+New Line.line15 Bus1=491 bus2=664  Length=2
+New PVSystem.DER15 phases=3 bus1=664 kV=12.47  kVA=30  Pmpp=30
+~ temperature=25 PF=1  effcurve=Myeff  P-TCurve=MyPvsT
+~ Daily=MyIrrad  TDaily=MyTemp
+
+New Line.line16 Bus1=339 bus2=665  Length=2
+New PVSystem.DER16 phases=3 bus1=665 kV=12.47  kVA=30  Pmpp=30
+~ temperature=25 PF=1  effcurve=Myeff  P-TCurve=MyPvsT
+~ Daily=MyIrrad  TDaily=MyTemp
+
+New Line.line17 Bus1=206 bus2=666  Length=2
+New PVSystem.DER17 phases=3 bus1=666 kV=12.47  kVA=30  Pmpp=30
+~ temperature=25 PF=1  effcurve=Myeff  P-TCurve=MyPvsT
+~ Daily=MyIrrad  TDaily=MyTemp
+
+New Line.line18 Bus1=207 bus2=667  Length=2
+New PVSystem.DER18 phases=3 bus1=667 kV=12.47  kVA=30  Pmpp=30
+~ temperature=25 PF=1  effcurve=Myeff  P-TCurve=MyPvsT
+~ Daily=MyIrrad  TDaily=MyTemp
+
+New Line.line19 Bus1=308 bus2=668  Length=2
+New PVSystem.DER19 phases=3 bus1=668 kV=12.47  kVA=30  Pmpp=30
+~ temperature=25 PF=1  effcurve=Myeff  P-TCurve=MyPvsT
+~ Daily=MyIrrad  TDaily=MyTemp
+
+New Line.line20 Bus1=329 bus2=669  Length=2
+New PVSystem.DER20 phases=3 bus1=669 kV=12.47  kVA=180  Pmpp=180
+~ temperature=25 PF=1  effcurve=Myeff  P-TCurve=MyPvsT
+~ Daily=MyIrrad  TDaily=MyTemp
+
+New Line.line21 Bus1=164 bus2=670  Length=2
+New PVSystem.DER21 phases=3 bus1=670 kV=12.47  kVA=180  Pmpp=180
+~ temperature=25 PF=1  effcurve=Myeff  P-TCurve=MyPvsT
+~ Daily=MyIrrad  TDaily=MyTemp
+
+New Line.line22 Bus1=44 bus2=671  Length=2
+New PVSystem.DER22 phases=3 bus1=671 kV=12.47  kVA=180  Pmpp=180
+~ temperature=25 PF=1  effcurve=Myeff  P-TCurve=MyPvsT
+~ Daily=MyIrrad  TDaily=MyTemp
+
+New Line.line23 Bus1=142 bus2=672  Length=2
+New PVSystem.DER23 phases=3 bus1=672 kV=12.47  kVA=180  Pmpp=180
+~ temperature=25 PF=1  effcurve=Myeff  P-TCurve=MyPvsT
+~ Daily=MyIrrad  TDaily=MyTemp
+
+New Line.line24 Bus1=301 bus2=673  Length=2
+New PVSystem.DER24 phases=3 bus1=673 kV=12.47  kVA=180  Pmpp=180
+~ temperature=25 PF=1  effcurve=Myeff  P-TCurve=MyPvsT
+~ Daily=MyIrrad  TDaily=MyTemp
+
+New Line.line25 Bus1=518 bus2=674  Length=2
+New PVSystem.DER25 phases=3 bus1=674 kV=12.47  kVA=180  Pmpp=180
+~ temperature=25 PF=1  effcurve=Myeff  P-TCurve=MyPvsT
+~ Daily=MyIrrad  TDaily=MyTemp
