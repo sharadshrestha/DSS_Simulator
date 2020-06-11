@@ -1,6 +1,5 @@
 '''
 Created on May 21, 2020
-
 @author: spate181
 '''
 
@@ -13,19 +12,20 @@ ig=opendsstools(dssfilelocation+"Master.dss")
 list_of_sensors='C:\\DSS_Simulator\\ieee650v2_Renamed_withpv\\sensor_location.csv'
 ig.initialize_log(list_of_sensors)
 starttime=0
-endtime= 8640 #6*60*24
+endtime= 8#640 #6*60*24
 
 
 
 ''' Socket '''
-host = socket.gethostname()  # as both code is running on same pc
+
+host = '192.168.1.79'#socket.gethostname()  # as both code is running on same pc
 port = 5000  # socket server port number
-client_socket = socket.socket()  # instantiate
+client_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)  # instantiate
 client_socket.connect((host, port))  # connect to the server
-            
+print("Server Address and port @ {}:{}".format(host, port))         
 
 
-#print('Received from server: ' + data)  # show in terminal
+#print('Received from server: ' + dpingata)  # show in terminal
 
     
 ig.setuppowerflow(0)

@@ -1,6 +1,5 @@
 '''
 Created on May 21, 2020
-
 @author: spate181
 '''
 
@@ -379,5 +378,3 @@ class opendsstools(object):
                     self.last_step_measurement[i][j]=val
         print("logging measurements")
         return [sim_time, self.last_step_measurement]
-
-    

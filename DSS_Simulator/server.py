@@ -1,13 +1,18 @@
 import socket
 def server_program():
-    # get the hostname
-    host = socket.gethostname()
-    port = 5000  # initiate port no above 1024
 
-    server_socket = socket.socket()  # get instance
+
+    server_socket =  socket.socket(socket.AF_INET, socket.SOCK_STREAM)  # get instance
+    
+    # get the hostname
+    #host = '192.168.1.94'#socket.gethostname()
+    host = socket.gethostbyname(socket.gethostname())
+    port = 5000  # initiate port no above 1024
+    
+    
     # look closely. The bind() function takes tuple as argument
     server_socket.bind((host, port))  # bind host address and port together
-
+    print("Server Address and port @ {}:{}".format(host, port))
     # configure how many client the server can listen simultaneously
     server_socket.listen(2)
     conn, address = server_socket.accept()  # accept new connection
